@@ -1,5 +1,5 @@
 # METAMORFOSE
-Metamorfose is a framework to convert relational databases (RDB) to document and column family NoSQLs built on top of Apache Spark.. Our approach receives as input a set of directed acyclic graphs (DAG) representing the target NoSQL model. The DAGs are used to generate commands to transform the input RDB data. The approach supports different cardinalities, and the commands can be customized.
+Metamorfose is a framework to convert relational databases (RDB) to document and column family NoSQLs built on top of Apache Spark. Our approach receives as input a set of directed acyclic graphs (DAG) representing the target NoSQL model. The DAGs are used to generate commands to transform the input RDB data. The approach supports different cardinalities, and the commands can be customized.
 
 # PRE-REQUISITES:
  - JDK 8.

@@ -1,0 +1,21 @@
+Neste pacote (command_experimental.*) temos algumas classes do projeto MetamorfoseX_RDB_to_NoSQL
+
+São as classes responsáveis por gerar os Commands. 
+Lembrando, um command encapsula o JoinSpec e Mappings para criar uma entidade.
+
+No entanto, no projeto MetamorfoseX_RDB_to_NoSQL, essas classes estão fortemente acopladas ao Metamorfose.
+Por exemplo, a geração de comandos usa a classe EntityMap e tipos de dados do Metamorfose.
+
+O objetivo aqui é tentar desacoplar essas classes para poder usar com outros frameworks para transformação de dados.
+
+Por exemplo, o ideia seria gerar a partir do DAG, commands que encaplusem os Mappings.
+Esses mappings seriam genéricos, com o mapeamento entre campos da entidade (FieldMappings) e UDF para transformar os dados.
+Esses mappings poderiam ser executados pelo Metamorfose ou por outro framework de transformação de dados.
+
+Cuidados:
+ - o framework ainda precisa ler os dados da origem.
+ - entender o Mapping, ou seja, se é um mapeamento 1:1, N:1 entre instâncias
+ - chamar o métodos adequado da classe MappingExecutor para transformar a(s) instância(s) de origem para a instância de destino.
+
+
+ATENÇÃO: tome cuidado com a redundância de código! Essas classes também estão em MetamorfoseX_RDB_to_NoSQL!

@@ -1,0 +1,15 @@
+ATENÇÃO: ESSAS CLASSES SÃO MUITO IMPORTANTES.
+ELAS DEFINEM A ESTRATÉGIA PARA CONVERTER RDB PARA NOSQL.
+ATRAVÉS DO DAG SÃO GERADOS OS MAPEAMENTOS E UDFs. 
+QUAIS MAPEAMENTOS E QUAIS UDFs ESTÃO DEFINIDAS DENTRO DAS CLASSES:
+ - ColCommandGenerator
+ - DocCommandGenerator
+
+Ainda não testei a estratégia ColCommandGenerator.
+
+É necessário criar uma nova classe no pacote test.jdbc, no estilo Test_JDBCCommandExecutor chamando como estratégia ColCommandGenerator.
+
+Coisas para verificar:
+ - os mappings gerados estão corretos?
+ - o método executeJoin de JDBCCommandExecutor está correto em relação ao ColCommandGenerator?
+ - verificar o método righjoin: ele encaixa para ColCommandGenerator?

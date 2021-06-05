@@ -1,0 +1,2 @@
+This package has some UDF developed in Java for embedded RDB tables to collections of documents or tables composed of column families.
+Here, the user can add more UDFs to represents other ways to convert RDB data into NoSQL format.

@@ -1,0 +1,2 @@
+Both files are Postgres database backups.
+To test the Metamorfose, we should create a Postgres database and restore one of the database backups.

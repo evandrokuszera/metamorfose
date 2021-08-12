@@ -19,5 +19,6 @@ Metamorfose is a framework to convert relational databases (RDB) to document and
  - In the test package we show some examples of transformations (RDB to NoSQL). We provided:
    - a ConversionProcess, that encapsulates one or more NoSQL schemas.
    - a Postgres backup file, that can be used as input data.
+      - Backup Files: metamorfose/tree/main/Metamorfose5/src/main/resources/rdb_postgres
    - the output data will be persisted in a local MongoDB database.
    - to execute the test files with Metamorfose you should install a local Postgres and MongoDB servers.
